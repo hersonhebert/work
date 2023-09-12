@@ -77,7 +77,7 @@ In this beta version, some functions were implemented:
 Calculating Occluded Surfaces:
 ```
 import fibos
-    fibos.occluded_surface("1ubq","FIBOS")
+    prot = fibos.occluded_surface("1ubq","FIBOS")
 ```
 Output: 
  - prot.srf file.
@@ -87,7 +87,7 @@ Output:
 Calculating OSP Value:
 ```
 import fibos
-    fibos.respack("prot.srf")
+    respack = fibos.respack("prot.srf")
 ```
 Output:
 
@@ -98,7 +98,8 @@ Output:
 Generating Dots Visualization:
 ```
 import fibos
-    fibos.pymol_visualize("raydist.lst","1ubq", "dots")
+    raydist = read_disp("raydist.lst")
+    fibos.pymol_visualize(raydist,"1ubq", "dots")
 ```
 Output: 
 
@@ -108,7 +109,8 @@ Output:
 Generating Rays Visualization
 ```
 import fibos
-    fibos.pymol_visualize("raydist.lst","1ubq", "rays")
+    raydist = read_disp("raydist.lst")
+    fibos.pymol_visualize(raydist,"1ubq", "rays")
 ```
 
 Output:
