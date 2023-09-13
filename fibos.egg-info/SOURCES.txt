@@ -19,6 +19,8 @@ fibos/main_intermediary.py
 fibos/makefile.py
 fibos/manage_os.py
 fibos/radii
+fibos/read_Disp.py
+fibos/read_Os.py
 fibos/read_prot.py
 fibos/respak.py
 fibos/visualize.py
